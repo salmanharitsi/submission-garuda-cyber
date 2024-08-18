@@ -15,9 +15,7 @@ class CheckRole
      */
     public function handle(Request $request, Closure $next, $role)
     {
-        
         if (!Auth::check()) {
-            // User tidak terautentikasi, redirect ke halaman login
             return redirect('login')->with([
                 'error' => [
                     "title" => "Anda harus login terlebih dahulu.",
@@ -28,7 +26,6 @@ class CheckRole
         $user = Auth::user();
 
         if (!$user->hasRole($role)) {
-            // User tidak memiliki role yang diperlukan
             abort(403, 'Anda tidak memiliki akses ke halaman ini.');
         }
 
