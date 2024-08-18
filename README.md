@@ -4,9 +4,9 @@
 
 This project is developed as part of a test assignment for the MSIB program by PT. Garuda Cyber Indonesia. The project focuses on creating a referral program where users can earn points for referring new users. Below are the details of the project.
 
-## Referral Program API
+## Referral Program
 
-This project is a backend API service for managing a referral system, built using Laravel 11. The API provides functionalities for user registration, referral tracking, and points management.
+This project is a Web services for managing a referral system, built using Laravel 11. The API provides functionalities for user registration, referral tracking, and points management.
 
 ### Features
 
